@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-bottom: 20px;
   /* background-color: crimson; */
 }
 
@@ -34,7 +35,7 @@ header {
   background-color: blue;
   width: 100%;
   justify-content: center;
-  height: 140px;
+  height: 160px;
 }
 
 .brand {
@@ -45,8 +46,15 @@ header {
 .avatar {
   position: relative;
   top: 50%;
-  border: 4px solid blue;
+  border: 2px solid #030b1a;
+  /* #0067d6 */
   border-radius: 50%;
+  box-shadow:
+    9px 9px 18px #908c0d,
+    -9px -9px 18px #f0ea15;
+  /* box-shadow: */
+  /*   21px 21px 36px #908c0d, */
+  /*   -21px -21px 36px #f0ea15; */
   /* top: 100px; */
   /* left: 100px; */
   /* top: 50%; */
@@ -55,17 +63,21 @@ header {
 
 .title {
   position: relative;
-  top: 50%;
+  top: 55%;
   /* left: 120px; */
+}
+.tagline {
+  position: relative;
+  top: 55%;
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 155px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   /* background-color: yellowgreen; */
   /* max-width: 450px;  */
 }
@@ -73,7 +85,8 @@ main {
 .banner {
   /* background-color: #030b1a; */
   text-align: center;
-  width: 100%;
+  height: 235px;
+  /* width: 100%; */
   max-width: 450px;
 }
 
@@ -81,17 +94,35 @@ main {
   width: 100%;
 }
 
+.wrap-link:hover {
+  /* background-color: #c4c4c4; */
+  background-color: #030b1a;
+  color: white;
+}
+
+/* a: hover { */
+/*   background-color: #c4c4c4; */
+/* } */
 .wrap-link {
+  text-decoration: none;
   margin: 0 40px;
   display: flex;
-  background-color: #030b1a;
-  color: wheat;
+  background-color: #c4c4c4;
+  /* background-color: #030b1a; */
+  color: black;
   align-items: center;
   justify-content: space-between;
   max-width: 400px;
   width: 60%;
-  padding: 10px 25px;
-  border-radius: 30px;
+  padding: 15px 25px;
+  border-radius: 35px;
+  box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.56);
+}
+
+.wrap-link > img {
+  width: 36px;
 }
 
 /* .wraper {
