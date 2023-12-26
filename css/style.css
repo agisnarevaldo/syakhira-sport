@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  background-image: url("/bio-link/bg.png");
+  background-image: url("/assets/bg.png");
   /* display: block; */
   /* background-repeat: no-repeat; */
   display: flex;
